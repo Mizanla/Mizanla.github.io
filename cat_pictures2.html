@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Pictures</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2em;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: white;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 3em auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .slider-container {
+            display: flex;
+            overflow: hidden; /* Add this line to hide overflowing content */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .next-arrow {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            font-size: 100px;
+            cursor: pointer;
+            color: #333;
+            background: none;
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .next-arrow:focus {
+            outline: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cat Pictures</h1>
+    </header>
+
+    <section>
+        <div class="slider-container">
+            <img src="cat2.jpg" alt="Cat 2">
+            <!-- Add more images as needed -->
+        </div>
+        <a class="next-arrow" href="next_page.html">→</a>
+    </section>
+
+    <footer>
+        &copy; 2024 Muzhar - Naber
+    </footer>
+</body>
+</html>
